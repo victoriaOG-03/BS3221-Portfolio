@@ -87,10 +87,3 @@ To deploy the application through the Azure cloud portal, follow these steps:
   
 2. For image uploads, make sure the image file is in a supported format (e.g., JPEG, PNG) and does not exceed any file size limits set by the application. 
 
-1. Copy the following link: `https://waqqly-dogs.azurewebsites.net/`.
-
-2. Open your web browser and paste the link into the address bar.
-
-3. Press Enter to access the deployed application.
-
-4. You should be able to see the website and have access to all the pages that are present.
