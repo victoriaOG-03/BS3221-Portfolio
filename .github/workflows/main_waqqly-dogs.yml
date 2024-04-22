@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'Waqqly-Dogs'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A2293A4530414537A2D3C07B0634D6A2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B3A39F742FDE4571AC9A8F2C42E6F063 }}
