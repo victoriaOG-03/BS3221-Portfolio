@@ -85,5 +85,7 @@ To deploy the application through the Azure cloud portal, follow these steps:
 
 1. Ensure that all necessary information is provided in the forms before submitting.
   
-2. For image uploads, make sure the image file is in a supported format (e.g., JPEG, PNG) and does not exceed any file size limits set by the application. 
+2. For image uploads, make sure the image file is in a supported format (e.g., JPEG, PNG) and does not exceed any file size limits set by the application.
+
+3. Im not to sure why but sometimes the azure portal does not pull the code so you may have to do a flask run before using the link and if it stil does not work then you can still use the application from the flask run and clicking the link in the terminal.
 
