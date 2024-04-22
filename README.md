@@ -50,9 +50,9 @@ Once you've set up the development environment, you can run the Flask applicatio
    the http link above is the link you should see if the system has successfully been placed on your device.
    ```
 
-### Deployment instructions via azure portal:
+## Deployment instructions via azure portal:
 
-To deploy the application through the Azure cloud portal, follow these steps:
+### To deploy the application through the Azure cloud portal, follow these steps:
 
 1. Copy the following link: `https://waqqly-dogs.azurewebsites.net/`.
 
