@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start (top) */
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Add some padding */
+  }
+  
+  h1 {
+    margin: 0; /* Remove default margin */
+    align-self: flex-start; /* Align the h1 to the start (top) */
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Add margin to separate buttons from heading */
+  }
+  
+  .btn1 {
+    /* button style */
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px; /* Set a fixed width for the buttons */
+    height: 48px; /* Set a fixed height for the buttons */
+    margin-bottom: 30px; /* Add margin between buttons */
+  }
+  
+  .btn1:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .btn1:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .btn1:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .btn1:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .btn1 {
+      padding: 0 40px;
+    }
+  }
+  

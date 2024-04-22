@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search For Dogs Here</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='searchdog.css') }}">
+</head>  
+
+<body style="background-color: #fee6e3; border: 5px solid #111">
+    <div class="container">
+        <u><h1>Search For Dogs Here</h1></u>
+        <div class="buttons">
+            <a href="/" class="btn1">Home</a>
+        </div>
+
+     <ul>
+    {% for pet in results %}
+        <li>
+            Name: {{ pet.name }}, 
+            Breed: {{ pet.breed }}, 
+            Age: {{ pet.age }},
+            {% if pet.image %}
+                <img src="{{ url_for('static', filename='images/' + pet.image) }}" alt="Dog Image">
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
+    </div>
+
+    <main>
+        <p>This is the homepage of my Flask application.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Flask App - Waqq.ly</p>
+    </footer>
+</body>
+</html>

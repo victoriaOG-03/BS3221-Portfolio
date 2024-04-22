@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Dogs Here</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='registerdog.css') }}">
+</head>
+<body style="background-color: #fee6e3; border: 5px solid #111">
+    <div class="container">
+        <u><h1>Register Your Dogs Here</h1></u>
+        <div class="buttons">
+            <a href="/" class="btn1">Home</a>
+        </div>
+        <form id="registerWalkerForm" action="/register_dog_walker" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" name="experience" required><br><br>
+            
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select><br><br>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*"><br><br>
+            
+            <input type="submit" value="Submit" onclick="submitForm()">
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Prevent default form submission
+            event.preventDefault();
+    
+            // Get form data
+            var form = document.getElementById('registerWalkerForm');
+            var formData = new FormData(form);
+    
+            // Send form data asynchronously using AJAX
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // If form submission is successful, redirect to the home page
+                    window.location.href = '/';
+                } else {
+                    // Handle errors if needed
+                    console.error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+    
+
+    <main>
+        <p>This is the homepage of my Flask application.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Flask App - Waqq.ly</p>
+    </footer>
+</body>
+</html>
