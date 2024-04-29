@@ -25,7 +25,6 @@
     background-color: #fee6e3;
     border: 2px solid #111;
     border-radius: 8px;
-    box-sizing: border-box;
     color: #111;
     cursor: pointer;
     font-family: Inter, sans-serif;
@@ -42,39 +41,16 @@
     width: 200px; /* Set a fixed width for the buttons */
     height: 48px; /* Set a fixed height for the buttons */
     margin-bottom: 30px; /* Add margin between buttons */
-  }
-  
-  .btn1:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-  }
-  
-  .btn1:hover:after {
-    transform: translate(0, 0);
-  }
-  
-  .btn1:active {
-    background-color: #ffdeda;
-    outline: 0;
+    transition: background-color 0.2s ease-out; /* Add transition for background color */
   }
   
   .btn1:hover {
-    outline: 0;
+    background-color: #ffdeda; /* Change background color on hover */
   }
   
   @media (min-width: 768px) {
     .btn1 {
-      padding: 0 40px;
+      padding: 0 40px; /* Adjust padding for larger screens */
     }
   }
   
