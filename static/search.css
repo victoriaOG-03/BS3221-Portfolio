@@ -21,10 +21,10 @@
   }
   
   .btn1 {
-    /* button style */
     background-color: #fee6e3;
     border: 2px solid #111;
     border-radius: 8px;
+    box-sizing: border-box;
     color: #111;
     cursor: pointer;
     font-family: Inter, sans-serif;
@@ -34,14 +34,11 @@
     padding: 0 25px;
     position: relative;
     text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
+    text-decoration: none; /* removes text underline*/
     touch-action: manipulation;
     width: 200px; /* Set a fixed width for the buttons */
     height: 48px; /* Set a fixed height for the buttons */
     margin-bottom: 30px; /* Add margin between buttons */
-    transition: background-color 0.2s ease-out; /* Add transition for background color */
   }
   
   .btn1:hover {
@@ -53,4 +50,5 @@
       padding: 0 40px; /* Adjust padding for larger screens */
     }
   }
+  
   

@@ -21,7 +21,6 @@ h1 {
 }
 
 .btn1 {
-  /* button style */
   background-color: #fee6e3;
   border: 2px solid #111;
   border-radius: 8px;
@@ -35,9 +34,7 @@ h1 {
   padding: 0 25px;
   position: relative;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
+  text-decoration: none; /* removes text underline*/
   touch-action: manipulation;
   width: 200px; /* Set a fixed width for the buttons */
   height: 48px; /* Set a fixed height for the buttons */
@@ -65,10 +62,6 @@ h1 {
 
 .btn1:active {
   background-color: #ffdeda;
-  outline: 0;
-}
-
-.btn1:hover {
   outline: 0;
 }
 
